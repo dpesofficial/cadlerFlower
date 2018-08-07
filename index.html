@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calderflower</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type='text/css' media='all'>
+    <link rel="stylesheet" href="css/custom.css" type='text/css' media='all'>
+</head>
+
+<body>
+
+<div id="site-wrapper">
+    <!-- ──
+    ── ──────────────────────────────────────────────────────────
+    ──   :::::: Header Section : :  :   :    :     :        :   :
+    ── ──────────────────────────────────────────────────────────
+    ── -->
+    <nav id="site-navigation" class="main-navigation">
+        <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">Primary Menu</button>
+        <div id="primary-menu" class="menu">
+            <ul aria-expanded="false" class=" nav-menu">
+                <li class="page_item page-item-11">
+                    <a href="http://localhost/calderflower/about-us/">About Us</a>
+                </li>
+                <li class="page_item page-item-19">
+                    <a href="http://localhost/calderflower/blog/">Blog</a>
+                </li>
+                <li class="page_item page-item-21">
+                    <a href="http://localhost/calderflower/contact-us/">Contact Us</a>
+                </li>
+                <li class="page_item page-item-9">
+                    <a href="http://localhost/calderflower/home/">Home</a>
+                </li>
+                <li class="page_item page-item-13">
+                    <a href="http://localhost/calderflower/meet-the-team/">Meet the team</a>
+                </li>
+                <li class="page_item page-item-17">
+                    <a href="http://localhost/calderflower/milestones/">Milestones</a>
+                </li>
+                <li class="page_item page-item-23">
+                    <a href="http://localhost/calderflower/privacy-policy/">Privacy Policy</a>
+                </li>
+                <li class="page_item page-item-15">
+                    <a href="http://localhost/calderflower/projects/">Projects</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div id="dp-hamburger" onclick="dpToggleMenu(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </div>
+                <div class="col-4 d-flex justify-content-center align-items-center">
+                    <img class="site-logo" src="img/logo.svg" alt="logo">
+                </div>
+                <div class="col-4 d-flex justify-content-end">
+                    <ul id="top-social">
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-pinterest"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+    function dpToggleMenu(x) {
+            x.classList.toggle("change");
+            document.getElementById("site-navigation").classList.toggle("shift-right");
+            document.getElementById("site-wrapper").classList.toggle("shift-right");
+        }</script>
+</body>
+
+</html>
