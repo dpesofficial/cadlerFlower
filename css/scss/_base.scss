@@ -5,8 +5,10 @@ $secondary-color: #235e4d;
 body {
     overflow-x: hidden;
     font-family: $primary-font;
+    background: #efefef;
 }
-%site-btn{
+%site-btn,
+.site-btn{
     min-width: 150px;
     height: 50px;
     line-height: 45px;
@@ -42,4 +44,13 @@ body {
         background: $secondary-color;
         color: #fff;
     }
+}
+
+%section-title{
+    font-size: 24px;
+    letter-spacing: 0.01em;
+    font-weight: 600;
+    padding-top: 50px;
+    padding-bottom: 48px;
+    text-align: center;
 }

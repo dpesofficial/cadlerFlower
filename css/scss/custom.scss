@@ -3,6 +3,7 @@
 // HEADER
 #header{
     font-weight: 300;
+    background: #fff;
     .site-logo{
         width: 269px;
         height: 25px;
@@ -73,10 +74,6 @@
 
 
 // Banner Slider
-.slider-for {
-    
-}
-
 .right-banner{
     margin-left: 10px;
     .slider-nav{
@@ -166,4 +163,105 @@
     }
 }
 
+.arrow-text{
+    font-weight: 300;
+    font-size: 32px;
+    letter-spacing: 0.01em;
+    color: $secondary-color;
+    text-align: center;
+    width: 100%;
+    padding-left: 15px;
+    margin-top: 32px;
+    margin-bottom: 94px;
+    .fas{
+        cursor: pointer;
+        color: $primary-color;
+    }
+    p{
+        padding-top: 50px;
+        line-height: 1.3;
+    }
+}
+
+// FEATURED WORK
+.featured-work{
+    background: #fff;
+    > .container{
+        padding: 0;
+    }
+    .col-lg-4:not(:nth-child(3n)) .work-block{
+        margin-right: 11px;
+    }
+    h3{
+        @extend %section-title;
+        color: $secondary-color;
+    }
+    .btn-wrap-center {
+        text-align: center;
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 58px;
+    }
+}
+
+.work-block {
+    position: relative;
+    margin-bottom: 10px;
+    &:hover .work-middle{
+        opacity: 1;
+        z-index: 1;
+    }
+    &:after{
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: transparent;
+        top: 0;
+        left: 0;
+        transition: .3s;
+    }
+    &:hover:after{
+        background: rgba(41, 56, 52, 0.90);
+        transition: .3s;
+    }
+    .work-image {
+        opacity: 1;
+        display: block;
+        transition: .5s ease;
+        backface-visibility: hidden;
+        height: 100%;
+    }
+    .work-middle {
+        transition: .3s;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+        width: 100%;
+        p{
+            font-size: 24px;
+            color: #fff;
+            letter-spacing: 0.01em;
+            font-weight: 300;
+            span{
+                font-weight: 600;
+            }
+        }
+        a{
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            bottom: -135px;
+            transition: .3s;
+        }
+    }
+       
+}
+
+
+// RESPONSIVE
 @import 'media';

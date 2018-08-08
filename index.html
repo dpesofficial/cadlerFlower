@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Calderflower</title>
-    <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:300,400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
     crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.min.css" type='text/css' media='all'>
@@ -108,7 +108,7 @@
     ──   ::::::Banner Sldier : :  :   :    :     :        :   :
     ── ──────────────────────────────────────────────────────────
     ── -->
-    <div class="container" class="home-banner">
+    <div class="container home-banner">
         <div class="row no-gutters">
             <div class="col-6">
                 <div class="slider-for">
@@ -159,21 +159,109 @@
             </div>
             </div>
         </div>
+
+        <!-- Bottom Banner Arrow Text -->
+        <div class="row">
+            <div class="arrow-text">
+                <i class="fas fa-chevron-down"></i>
+                <p>We are specialists in creating aged care and <br/> community living spaces that celebrate life</p>
+            </div>
+        </div>
     </div>
 
-</div>
+    <!-- ──
+    ── ──────────────────────────────────────────────────────────
+    ──   ::::::Featured Work : :  :   :    :     :        :   :
+    ── ──────────────────────────────────────────────────────────
+    ── -->
+    <div class="featured-work">
+        <h3 class="section-title">Featured work</h3>
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-lg-4">
+                    <div class="work-block">
+                        <img src="img/Rectangle 2 copy 10.jpg" alt="Avatar" class="img-fluid work-image">
+                        <div class="work-middle">
+                            <p> <span>Bupa </span> | Baulkham Hills Aged Care</p>
+                            <a href="#" class="work-btn site-btn btn-orange">View Work</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="work-block">
+                        <img src="img/Rectangle 2 copy 11.jpg" alt="Avatar" class="img-fluid work-image">
+                        <div class="work-middle">
+                            <p> <span>Bupa </span> | Baulkham Hills Aged Care</p>
+                            <a href="#" class="work-btn site-btn btn-orange">View Work</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="work-block">
+                        <img src="img/Rectangle 2 copy 12.jpg" alt="Avatar" class="img-fluid work-image">
+                        <div class="work-middle">
+                            <p> <span>Bupa </span> | Baulkham Hills Aged Care</p>
+                            <a href="#" class="work-btn site-btn btn-orange">View Work</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="work-block">
+                        <img src="img/Rectangle 2 copy 13.jpg" alt="Avatar" class="img-fluid work-image">
+                        <div class="work-middle">
+                            <p> <span>Bupa </span> | Baulkham Hills Aged Care</p>
+                            <a href="#" class="work-btn site-btn btn-orange">View Work</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="work-block">
+                        <img src="img/Rectangle 2 copy 8.jpg" alt="Avatar" class="img-fluid work-image">
+                        <div class="work-middle">
+                            <p> <span>Bupa </span> | Baulkham Hills Aged Care</p>
+                            <a href="#" class="work-btn site-btn btn-orange">View Work</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="work-block">
+                        <img src="img/Rectangle 2 copy 9.jpg" alt="Avatar" class="img-fluid work-image">
+                        <div class="work-middle">
+                            <p> <span>Bupa </span> | Baulkham Hills Aged Care</p>
+                            <a href="#" class="work-btn site-btn btn-orange">View Work</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="btn-wrap-center">
+                    <a href="#" class="site-btn btn-orange">See more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div> <!-- end tag of site wrapper -->
   
 
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/slick.min.js"></script>
-    <script>
-        function dpToggleMenu(x) {
-            x.classList.toggle("change");
-            document.getElementById("site-navigation").classList.toggle("shift-right");
-            document.getElementById("site-wrapper").classList.toggle("shift-right");
-        }
+        <script>
+            function dpToggleMenu(x) {
+                x.classList.toggle("change");
+                document.getElementById("site-navigation").classList.toggle("shift-right");
+                document.getElementById("site-wrapper").classList.toggle("shift-right");
+
+                // text toggle
+                var x = document.getElementById("menu-text");
+                if (x.innerHTML === "Menu") {
+                    x.innerHTML = "Close";
+                } else {
+                    x.innerHTML = "Menu";
+                }
+            }
         
         jQuery(document).ready(function($){
         // Home Banner Slider
