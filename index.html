@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Calderflower</title>
-    
     <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
     crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.min.css" type='text/css' media='all'>
+    <link rel="stylesheet" href="css/slick.css" type="text/css" media='all'>
     <link rel="stylesheet" href="css/custom.css" type='text/css' media='all'>
 </head>
 
@@ -57,17 +57,20 @@
     <div id="header">
         <div class="container">
             <div class="row">
-                <div class="col-4">
+                <div class="col-4 d-flex align-items-center">
                     <div id="dp-hamburger" onclick="dpToggleMenu(this)">
                         <div class="bar1"></div>
                         <div class="bar2"></div>
                         <div class="bar3"></div>
+                        <span id="menu-text">Menu</span>
                     </div>
                 </div>
                 <div class="col-4 d-flex justify-content-center align-items-center">
-                    <img class="site-logo" src="img/logo.svg" alt="logo">
+                    <a href="#">
+                        <img class="img-fluid site-logo" src="img/logo.svg" alt="logo">
+                    </a>
                 </div>
-                <div class="col-4 d-flex justify-content-end">
+                <div class="col-4 d-flex justify-content-end align-items-center">
                     <ul id="top-social">
                         <li>
                             <a href="#">
@@ -99,18 +102,98 @@
             </div>
         </div>
     </div>
+
+    <!-- ──
+    ── ──────────────────────────────────────────────────────────
+    ──   ::::::Banner Sldier : :  :   :    :     :        :   :
+    ── ──────────────────────────────────────────────────────────
+    ── -->
+    <div class="container" class="home-banner">
+        <div class="row no-gutters">
+            <div class="col-6">
+                <div class="slider-for">
+                    <div class="home-bnr-img">
+                        <img src="img/home-banner.jpg" alt="home-banner">
+                    </div>
+                    <div class="home-bnr-img">
+                        <img src="img/home-banner.jpg" alt="home-banner">
+                    </div>
+                    <div class="home-bnr-img">
+                        <img src="img/home-banner.jpg" alt="home-banner">
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+            <div class="right-banner">
+                <div class="right-top-sldr slider-nav">
+                    <div class="home-bnr-text">
+                        <h2>1Creating <br/> living spaces</h2>
+                        <span class="slider-cat">architecture + interiors</span>
+                        <a href="#" class="site-btn btn-orange">Let's Talk</a>
+                        <a href="#" class="site-btn btn-green">Our Aim</a>
+                    </div>
+                    <div class="home-bnr-text">
+                        <h2>2Creating<br/>  living spaces</h2>
+                        <span class="slider-cat">architecture + interiors</span>
+                        <a href="#" class="site-btn btn-orange">Let's Talk</a>
+                        <a href="#" class="site-btn btn-green">Our Aim</a>
+                    </div>
+                    <div class="home-bnr-text">
+                        <h2>3Creating <br/> living spaces</h2>
+                        <span class="slider-cat">architecture + interiors</span>
+                        <a href="#" class="site-btn btn-orange">Let's Talk</a>
+                        <a href="#" class="site-btn btn-green">Our Aim</a>
+                    </div>
+                </div>
+                <div class="right-btm-sldr">
+                    <a href="#" class="bnr-page-blk bnr-projects">
+                        view Our <br/> Projects
+                    </a>
+                    <a href="#" class="bnr-page-blk bnr-team">
+                        Meet Our <br/> Team
+                    </a>
+                    <a href="#" class="bnr-page-blk bnr-news">
+                       Read Our <br/> News
+                    </a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
 </div>
   
 
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script>
-    function dpToggleMenu(x) {
+        function dpToggleMenu(x) {
             x.classList.toggle("change");
             document.getElementById("site-navigation").classList.toggle("shift-right");
             document.getElementById("site-wrapper").classList.toggle("shift-right");
-        }</script>
+        }
+        
+        jQuery(document).ready(function($){
+        // Home Banner Slider
+        $('.slider-for').slick({
+            slidesToShow: 1,
+            arrows: false,
+            fade: false,
+            asNavFor: '.slider-nav'
+        });
+        $('.slider-nav').slick({
+            slidesToShow: 1,
+            asNavFor: '.slider-for',
+            dots: true,
+            arrows: false,
+            focusOnSelect: true,
+            fade: true
+        });
+        });
+    </script>
+
 </body>
 
 </html>
