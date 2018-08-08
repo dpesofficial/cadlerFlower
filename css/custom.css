@@ -151,11 +151,11 @@ body {
         background-size: 105% 105%;
         transition: .3s; }
       .right-banner .right-btm-sldr .bnr-page-blk.bnr-projects {
-        background-image: url(../../img/view-projects.jpg); }
+        background-image: url(../img/view-projects.jpg); }
       .right-banner .right-btm-sldr .bnr-page-blk.bnr-team {
-        background-image: url(../../img/meet-team.jpg); }
+        background-image: url(../img/meet-team.jpg); }
       .right-banner .right-btm-sldr .bnr-page-blk.bnr-news {
-        background-image: url(../../img/read-team.jpg); }
+        background-image: url(../img/read-team.jpg); }
       .right-banner .right-btm-sldr .bnr-page-blk:not(:last-child) {
         margin-right: 10px; }
 

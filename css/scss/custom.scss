@@ -151,13 +151,13 @@
                 transition: .3s;
             }
             &.bnr-projects{
-                background-image: url(../../img/view-projects.jpg); 
+                background-image: url(../img/view-projects.jpg); 
             }
             &.bnr-team{
-                background-image: url(../../img/meet-team.jpg); 
+                background-image: url(../img/meet-team.jpg); 
             }
             &.bnr-news{
-                background-image: url(../../img/read-team.jpg); 
+                background-image: url(../img/read-team.jpg); 
             }
             &:not(:last-child){
                 margin-right: 10px;
