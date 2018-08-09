@@ -98,15 +98,27 @@ body {
   #dp-hamburger #menu-text {
     position: absolute;
     left: 60px;
-    top: 23px; }
+    top: 23px;
+    color: #333; }
 
 #site-navigation {
+  padding-top: 70px;
   width: 315px;
   background: #293834;
   position: fixed;
   height: 100%;
   left: -315px;
   transition: 0.5s; }
+  #site-navigation ul li {
+    list-style: none; }
+    #site-navigation ul li a {
+      color: #fcfaf9;
+      font-size: 21px;
+      letter-spacing: 0.01em;
+      font-weight: 300;
+      text-decoration: none;
+      padding-bottom: 15px;
+      display: inline-block; }
   #site-navigation.shiftRight {
     left: 0; }
 

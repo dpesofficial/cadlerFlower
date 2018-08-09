@@ -55,9 +55,27 @@
         position: absolute;
         left: 60px;
         top: 23px;
+        color: #333;
     }
 }
 #site-navigation {
+    padding-top: 70px;
+    ul{
+        li{
+            list-style: none;
+            a {
+                color: #fcfaf9;
+                font-size: 21px;
+                letter-spacing: 0.01em;
+                font-weight: 300;
+                text-decoration: none;
+                padding-bottom: 15px; 
+                display: inline-block;
+            }
+        }
+    }
+    
+
     width: 315px;
     background: #293834;
     position: fixed;
