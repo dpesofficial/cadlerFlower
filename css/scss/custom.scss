@@ -163,14 +163,9 @@
     }
 }
 
+
 .arrow-text{
-    font-weight: 300;
-    font-size: 32px;
-    letter-spacing: 0.01em;
-    color: $secondary-color;
-    text-align: center;
-    width: 100%;
-    padding-left: 15px;
+    @extend %heading-desc;
     margin-top: 32px;
     margin-bottom: 94px;
     .fas{
@@ -195,12 +190,6 @@
     h3{
         @extend %section-title;
         color: $secondary-color;
-    }
-    .btn-wrap-center {
-        text-align: center;
-        width: 100%;
-        margin-top: 40px;
-        margin-bottom: 58px;
     }
 }
 
@@ -262,6 +251,61 @@
        
 }
 
+// form map
+.form-map{
+    position: relative;
+    &:before{
+        content: "";
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-top: 30px solid white;
+    }
+    .row{
+        border-bottom: 4px solid $secondary-color;
+    }
+    .heading-title{
+        @extend %heading-desc;
+        padding-top: 80px;
+    }
+    .form-wrap{
+        min-height: 500px;
+        background: #fff;
+    }
+}
 
+
+.instagram-block{
+    padding-bottom: 70px;
+    .insta-feed{
+        min-height: 400px;
+        background: #fff;
+    }
+    h3{
+        @extend %section-title;
+        color: $primary-color;
+    }
+}
+
+.copyright-block{
+    background: #333333;
+    color: #fff;
+    height: 110px;
+    .container,.row{
+        height: 100%;
+    }
+    .row{
+        align-items: center;
+    }
+    p{
+        margin-bottom: 0;
+        font-weight: 300;
+    }
+}
 // RESPONSIVE
 @import 'media';

@@ -37,13 +37,28 @@ body {
     background: #235e4d;
     color: #fff; }
 
-.featured-work h3 {
+.featured-work h3, .instagram-block h3 {
   font-size: 24px;
   letter-spacing: 0.01em;
   font-weight: 600;
   padding-top: 50px;
   padding-bottom: 48px;
   text-align: center; }
+
+.arrow-text, .form-map .heading-title {
+  font-weight: 300;
+  font-size: 32px;
+  letter-spacing: 0.01em;
+  color: #235e4d;
+  text-align: center;
+  width: 100%;
+  padding-left: 15px; }
+
+.btn-wrap-center {
+  text-align: center;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 58px; }
 
 #header {
   font-weight: 300;
@@ -172,13 +187,6 @@ body {
         margin-right: 10px; }
 
 .arrow-text {
-  font-weight: 300;
-  font-size: 32px;
-  letter-spacing: 0.01em;
-  color: #235e4d;
-  text-align: center;
-  width: 100%;
-  padding-left: 15px;
   margin-top: 32px;
   margin-bottom: 94px; }
   .arrow-text .fas {
@@ -196,11 +204,6 @@ body {
     margin-right: 11px; }
   .featured-work h3 {
     color: #235e4d; }
-  .featured-work .btn-wrap-center {
-    text-align: center;
-    width: 100%;
-    margin-top: 40px;
-    margin-bottom: 58px; }
 
 .work-block {
   position: relative;
@@ -249,6 +252,47 @@ body {
       transform: translate(-50%, -50%);
       bottom: -135px;
       transition: .3s; }
+
+.form-map {
+  position: relative; }
+  .form-map:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 30px solid white; }
+  .form-map .row {
+    border-bottom: 4px solid #235e4d; }
+  .form-map .heading-title {
+    padding-top: 80px; }
+  .form-map .form-wrap {
+    min-height: 500px;
+    background: #fff; }
+
+.instagram-block {
+  padding-bottom: 70px; }
+  .instagram-block .insta-feed {
+    min-height: 400px;
+    background: #fff; }
+  .instagram-block h3 {
+    color: #fc671a; }
+
+.copyright-block {
+  background: #333333;
+  color: #fff;
+  height: 110px; }
+  .copyright-block .container, .copyright-block .row {
+    height: 100%; }
+  .copyright-block .row {
+    align-items: center; }
+  .copyright-block p {
+    margin-bottom: 0;
+    font-weight: 300; }
 
 @media (min-width: 1366px) {
   .container {
