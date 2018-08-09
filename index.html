@@ -16,13 +16,13 @@
 
 <body>
 
-<div id="site-wrapper">
+<div id="site-wrapper" v-bind:class="{ shiftRight }">
     <!-- ──
     ── ──────────────────────────────────────────────────────────
     ──   :::::: Header Section : :  :   :    :     :        :   :
     ── ──────────────────────────────────────────────────────────
     ── -->
-    <nav id="site-navigation" class="main-navigation">
+    <nav id="site-navigation" class="main-navigation" v-bind:class="{ shiftRight }">
         <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">Primary Menu</button>
         <div id="primary-menu" class="menu">
             <ul aria-expanded="false" class=" nav-menu">
@@ -58,11 +58,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-4 d-flex align-items-center">
-                    <div id="dp-hamburger" onclick="dpToggleMenu(this)">
+                <div id="dp-hamburger"  v-bind:class="{ change }" v-on:click="dpToggleMenu">
                         <div class="bar1"></div>
                         <div class="bar2"></div>
                         <div class="bar3"></div>
-                        <span id="menu-text">Menu</span>
+                        <span id="menu-text"> {{ menu }}</span>
                     </div>
                 </div>
                 <div class="col-4 d-flex justify-content-center align-items-center">
@@ -334,19 +334,21 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/custom.js"></script>
         <script>
             function dpToggleMenu(x) {
-                x.classList.toggle("change");
-                document.getElementById("site-navigation").classList.toggle("shift-right");
-                document.getElementById("site-wrapper").classList.toggle("shift-right");
+                // x.classList.toggle("change");
+                // document.getElementById("site-navigation").classList.toggle("shift-right");
+                // document.getElementById("site-wrapper").classList.toggle("shift-right");
 
-                // text toggle
-                var x = document.getElementById("menu-text");
-                if (x.innerHTML === "Menu") {
-                    x.innerHTML = "Close";
-                } else {
-                    x.innerHTML = "Menu";
-                }
+                // // text toggle
+                // var x = document.getElementById("menu-text");
+                // if (x.innerHTML === "Menu") {
+                //     x.innerHTML = "Close";
+                // } else {
+                //     x.innerHTML = "Menu";
+                // }
             }
         
         jQuery(document).ready(function($){

@@ -69,6 +69,13 @@ body {
   #header .row {
     height: 70px; }
 
+#top-social li:not(:last-child) a {
+  padding-right: 15px; }
+#top-social li a {
+  color: #235e4d;
+  font-size: 18px;
+  display: inline-block; }
+
 #dp-hamburger {
   display: inline-block;
   cursor: pointer; }
@@ -100,14 +107,14 @@ body {
   height: 100%;
   left: -315px;
   transition: 0.5s; }
-  #site-navigation.shift-right {
+  #site-navigation.shiftRight {
     left: 0; }
 
 #site-wrapper {
   transition: .3s;
   position: relative;
   left: 0; }
-  #site-wrapper.shift-right {
+  #site-wrapper.shiftRight {
     left: 135px;
     transition: .3s; }
 
@@ -292,7 +299,10 @@ body {
     align-items: center; }
   .copyright-block p {
     margin-bottom: 0;
-    font-weight: 300; }
+    font-weight: 300;
+    letter-spacing: 0.01em; }
+  .copyright-block #top-social li a {
+    color: #fff; }
 
 @media (min-width: 1366px) {
   .container {
